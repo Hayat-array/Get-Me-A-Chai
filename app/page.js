@@ -3,11 +3,6 @@
 import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-<script async
-  src="https://pay.google.com/gp/p/js/pay.js"
-  onload="console.log('✅ Google Pay SDK Loaded')"
-  onerror="console.error('❌ Failed to load Google Pay SDK')">
-</script>
 
 export default function Home() {
   useEffect(() => {

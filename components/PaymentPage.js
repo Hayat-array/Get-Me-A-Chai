@@ -72,7 +72,7 @@ const PaymentPage = ({ username }) => {
           type: "PAYMENT_GATEWAY",
           parameters: {
             gateway: "razorpay", // or stripe, payu, etc.
-            gatewayMerchantId: currentUser.gatewayMerchantId,
+            gatewayMerchantId: currentUser.gatewayMerchantId || "your_gateway_merchant_id",
           },
         },
       },

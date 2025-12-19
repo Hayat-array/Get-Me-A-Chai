@@ -19,7 +19,7 @@ const Dashboard = () => {
     if (status === "authenticated") {
       getData();
     }
-  }, [status]);
+  }, [status, router]);
 
   const getData = async () => {
     try {

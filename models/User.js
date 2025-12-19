@@ -8,11 +8,16 @@ const UserSchema = new Schema({
     profilepic: { type: String },
     coverpic: { type: String },
 
+    // Razorpay credentials (for backward compatibility)
+    razorpayid: { type: String },
+    razorpaysecret: { type: String },
+
     // Google Pay (Wallet API) credentials
     issuerId: { type: String }, 
     serviceAccountEmail: { type: String },
     credentialsPath: { type: String },  // path to JSON key file OR key string
     gpayToken: { type: String }, // optional - for session/payment tracking
+    gatewayMerchantId: { type: String }, // Gateway merchant ID for Google Pay
 
     createdAt: { type: Date, default: Date.now },
     updatedAt: { type: Date, default: Date.now },

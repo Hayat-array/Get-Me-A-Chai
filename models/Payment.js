@@ -9,6 +9,8 @@ const PaymentSchema = new Schema(
     message: { type: String },                       // optional note
     amount: { type: Number, required: true },        // transaction amount
     done: { type: Boolean, default: false },         // payment status
+    paymentMethod: { type: String },                 // payment method (razorpay/googlepay)
+    paymentToken: { type: String },                  // payment token for verification
   },
   { timestamps: true } // automatically adds createdAt and updatedAt
 );
